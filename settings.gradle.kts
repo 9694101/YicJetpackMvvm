@@ -1,66 +1,30 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        google()
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://4thline.org/m2")
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
         }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("https://jitpack.io") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/groups/public/")
-        }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/jcenter") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/google") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/gradle-plugin") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("https://dl.bintray.com/thelasterstar/maven/") }
-        maven {
-            url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-        }
-
         mavenCentral()
-        maven { url = uri("https://repo1.maven.org/maven2/") }
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://4thline.org/m2") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("https://jitpack.io") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/groups/public/") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/jcenter") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/google") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("http://maven.aliyun.com/nexus/content/repositories/gradle-plugin") }
-        maven {
-            isAllowInsecureProtocol = true
-            url = uri("https://oss.sonatype.org/content/repositories/snapshots/") }
-
         mavenCentral()
-        maven { url = uri("https://repo1.maven.org/maven2/") }
+        maven("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_support/")
+        maven("https://maven.aliyun.com/repository/central")
+        maven("https://maven.aliyun.com/repository/public")
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/gradle-plugin")
+        maven("https://www.jitpack.io")
+        maven("https://dl.bintray.com/thelasterstar/maven/")
+        maven("https://oss.sonatype.org/content/repositories/snapshots")
+        maven("https://repo1.maven.org/maven2/")
     }
 }
 

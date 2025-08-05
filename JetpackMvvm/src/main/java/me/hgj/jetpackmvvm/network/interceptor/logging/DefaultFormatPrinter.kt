@@ -30,14 +30,14 @@ class DefaultFormatPrinter : FormatPrinter {
         request: Request,
         bodyString: String
     ) {
-        appendTag = md5(URL_TAG + request.url())
+        appendTag = md5(URL_TAG + request.url)
         val requestBody =
             LINE_SEPARATOR + BODY_TAG + LINE_SEPARATOR + bodyString
         val tag = getTag(true)
         LogUtils.debugInfo(tag, REQUEST_UP_LINE)
         logLines(
             tag,
-            arrayOf(URL_TAG + request.url()),
+            arrayOf(URL_TAG + request.url),
             false
         )
         logLines(
@@ -47,7 +47,7 @@ class DefaultFormatPrinter : FormatPrinter {
         )
         logLines(
             tag,
-            requestBody.split(LINE_SEPARATOR!!).toTypedArray(),
+            requestBody.split(LINE_SEPARATOR).toTypedArray(),
             true
         )
         LogUtils.debugInfo(tag, END_LINE)
@@ -59,12 +59,12 @@ class DefaultFormatPrinter : FormatPrinter {
      * @param request
      */
     override fun printFileRequest(request: Request) {
-        appendTag = md5(URL_TAG + request.url())
+        appendTag = md5(URL_TAG + request.url)
         val tag = getTag(true)
         LogUtils.debugInfo(tag, REQUEST_UP_LINE)
         logLines(
             tag,
-            arrayOf(URL_TAG + request.url()),
+            arrayOf(URL_TAG + request.url),
             false
         )
         logLines(
@@ -137,7 +137,7 @@ class DefaultFormatPrinter : FormatPrinter {
         )
         logLines(
             tag,
-            responseBody.split(LINE_SEPARATOR!!).toTypedArray(),
+            responseBody.split(LINE_SEPARATOR).toTypedArray(),
             true
         )
         LogUtils.debugInfo(tag, END_LINE)
@@ -201,7 +201,7 @@ class DefaultFormatPrinter : FormatPrinter {
 
     companion object {
         private const val TAG = "HttpLog"
-        private val LINE_SEPARATOR = System.getProperty("line.separator")
+        private val LINE_SEPARATOR = System.lineSeparator()
         private val DOUBLE_SEPARATOR =
             LINE_SEPARATOR + LINE_SEPARATOR
         private val OMITTED_RESPONSE = arrayOf(
@@ -301,13 +301,13 @@ class DefaultFormatPrinter : FormatPrinter {
 
         private fun getRequest(request: Request): Array<String?> {
             val log: String
-            val header = request.headers().toString()
+            val header = request.headers.toString()
             log =
-                METHOD_TAG + request.method() + DOUBLE_SEPARATOR +
+                METHOD_TAG + request.method + DOUBLE_SEPARATOR +
                         if (isEmpty(header)) "" else HEADERS_TAG + LINE_SEPARATOR + dotHeaders(
                             header
                         )
-            return log.split(LINE_SEPARATOR!!).toTypedArray()
+            return log.split(LINE_SEPARATOR).toTypedArray()
         }
 
         private fun getResponse(
@@ -325,7 +325,7 @@ class DefaultFormatPrinter : FormatPrinter {
                     )
                 ) "" else HEADERS_TAG + LINE_SEPARATOR +
                         dotHeaders(header))
-            return log.split(LINE_SEPARATOR!!).toTypedArray()
+            return log.split(LINE_SEPARATOR).toTypedArray()
         }
 
         private fun slashSegments(segments: List<String?>): String {
@@ -344,17 +344,21 @@ class DefaultFormatPrinter : FormatPrinter {
          */
         private fun dotHeaders(header: String): String {
             val headers =
-                header.split(LINE_SEPARATOR!!).toTypedArray()
+                header.split(LINE_SEPARATOR).toTypedArray()
             val builder = StringBuilder()
             var tag = "─ "
             if (headers.size > 1) {
                 for (i in headers.indices) {
-                    tag = if (i == 0) {
-                        CORNER_UP
-                    } else if (i == headers.size - 1) {
-                        CORNER_BOTTOM
-                    } else {
-                        CENTER_LINE
+                    tag = when (i) {
+                        0 -> {
+                            CORNER_UP
+                        }
+                        headers.size - 1 -> {
+                            CORNER_BOTTOM
+                        }
+                        else -> {
+                            CENTER_LINE
+                        }
                     }
                     builder.append(tag).append(headers[i]).append("\n")
                 }

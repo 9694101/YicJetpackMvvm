@@ -1,0 +1,195 @@
+[versions]
+adsSdkPro = "6.8.2.0"
+adsIdentifier = "3.4.62.300"
+adsIdentifierVersion = "1.0.2.301"
+agp = "8.11.1"
+alipaysdkAndroid = "15.8.30"
+android_cn_oaid = "4.2.12"
+androidExample = "1.0.1"
+appconvert = "2.0.0"
+banner = "2.2.3"
+asms = "1.8.5.1"
+bannerviewpager = "3.5.12"
+baserecyclerviewadapterhelper = "3.0.11"
+cameraview = "2.7.2"
+circleimageview = "3.1.0"
+circlemenu = "3.0.0"
+circleprogressbar = "1.3.6"
+circularfloatingactionmenu = "1.0.2"
+common = "9.7.9"
+comShouzhongScanner3 = "1.1.3"
+comGoogleZxingCore3 = "3.5.3"
+comGithubMmin18Realtimeblurview3 = "1.2.1"
+crashreportVersion = "4.1.9.3"
+eventbus = "3.2.0"
+floatingx = "2.3.5"
+flowlayoutLib = "1.1.2"
+androidPdfViewer = "3.2.0-beta.1"
+androidGifDrawable = "1.2.28"
+fragmentKtx = "1.6.0"
+githubWheelview = "4.1.14"
+glide = "4.16.0"
+gson = "2.10.1"
+honorPush = "7.0.61.303"
+constraintlayout = "2.2.0"
+immersionbar = "3.0.0"
+imsdkPlus = "8.0.5895"
+jpGlideTransformations = "4.3.0"
+kotlin = "2.2.0"
+coreKtx = "1.13.1"
+foundation = "0.5.7.fc32fe3"
+appcompat = "1.7.0"
+library = "1.7.7"
+libraryx = "1.7.6"
+lifecycleExtensions = "2.2.0"
+lifecycleRuntimeKtx = "2.6.2"
+lottie = "6.0.0"
+makeramenRoundedimageview = "2.3.0"
+material = "1.10.0"
+materialVersion = "1.9.0"
+mediationAutoAdapter = "1.0.3"
+mediationSdk = "6.5.0.2"
+meLibraryVersion = "1.6.1"
+mpandroidchart = "v3.1.0"
+nativecrashreportVersion = "3.9.2"
+navigationUiKtx = "2.6.0"
+okhttpSse = "3.14.9"
+oppoPush = "3.4.0"
+persistentcookiejar = "v1.0.1"
+pictureselectorVersion = "v3.11.2"
+push = "6.6.2"
+pushVersion = "6.12.0.300"
+qqopensdk = "3.52.0"
+randomtextview = "v1.4"
+rangersapplogAllPlugin = "6.17.1"
+rangersapplogDevtools = "3.4.2"
+rangeseekbar = "v3.0.0"
+realmGradlePlugin = "10.19.0"
+refreshFooterClassicsVersion = "2.0.5"
+retrofit = "3.0.0"
+retrofitUrlManager = "1.4.0"
+rxffmpeg = "4.9.0"
+scannerzbarlib = "1.0.0"
+sdkUtilities = "1.0.10"
+shadowlayout = "3.4.0"
+shortcutbadgerVersion = "1.1.22"
+tencentLibpag = "4.3.62"
+tencentMapVectorSdk = "6.3.0.250311.940c5007.146962199"
+ucropVersion = "v3.11.1"
+unpeekLivedataVersion = "4.4.1-beta1"
+utilcodex = "1.31.1"
+vivoPush = "3.0.0.7"
+wechatSdkAndroidWithoutMta = "6.8.0"
+#升级编译不过
+xiaomiPush = "5.9.9"
+xiaomiUmengaccs = "2.1.0"
+xx = "1.3.2"
+yicjetpackmvvm = "1.0"
+tencentVasdolly = "3.0.6"
+
+
+[libraries]
+ads-sdk-pro = { module = "com.pangle.cn:ads-sdk-pro", version.ref = "adsSdkPro" }
+ads-identifier = { module = "com.huawei.hms:ads-identifier", version.ref = "adsIdentifier" }
+alipaysdk-android = { module = "com.alipay.sdk:alipaysdk-android", version.ref = "alipaysdkAndroid" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+appconvert = { module = "com.bytedance.ads:AppConvert", version.ref = "appconvert" }
+android-example = { module = "com.github.jitpack:android-example", version.ref = "androidExample" }
+android-gif-drawable = { module = "pl.droidsonroids.gif:android-gif-drawable", version.ref = "androidGifDrawable" }
+android-pdf-viewer = { module = "com.github.barteksc:android-pdf-viewer", version.ref = "androidPdfViewer" }
+android_cn_oaid = { module = "com.github.gzu-liyujiang:Android_CN_OAID", version.ref = "android_cn_oaid" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+archi-unpeek-livedata = { module = "com.kunminx.archi:unpeek-livedata", version.ref = "unpeekLivedataVersion" }
+asms = { module = "com.umeng.umsdk:asms", version.ref = "asms" }
+banner = { module = "io.github.youth5201314:banner", version.ref = "banner" }
+bannerviewpager = { module = "com.github.zhpanvip:BannerViewPager", version.ref = "bannerviewpager" }
+baserecyclerviewadapterhelper = { module = "com.github.CymChad:BaseRecyclerViewAdapterHelper", version.ref = "baserecyclerviewadapterhelper" }
+bugly-crashreport = { module = "com.tencent.bugly:crashreport", version.ref = "crashreportVersion" }
+bugly-nativecrashreport = { module = "com.tencent.bugly:nativecrashreport", version.ref = "nativecrashreportVersion" }
+cameraview = { module = "com.otaliastudios:cameraview", version.ref = "cameraview" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+circlemenu = { module = "com.github.imangazalievm:circlemenu", version.ref = "circlemenu" }
+circleprogressbar = { module = "com.dinuscxj:circleprogressbar", version.ref = "circleprogressbar" }
+circularfloatingactionmenu = { module = "com.oguzdev:CircularFloatingActionMenu", version.ref = "circularfloatingactionmenu" }
+com-github-mmin18-realtimeblurview4 = { module = "com.github.mmin18:realtimeblurview", version.ref = "comGithubMmin18Realtimeblurview3" }
+com-google-zxing-core4 = { module = "com.google.zxing:core", version.ref = "comGoogleZxingCore3" }
+com-makeramen-roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "makeramenRoundedimageview" }
+com-shouzhong-scanner5 = { module = "com.shouzhong:Scanner", version.ref = "comShouzhongScanner3" }
+common = { module = "com.umeng.umsdk:common", version.ref = "common" }
+compress = { module = "io.github.lucksiege:compress", version.ref = "pictureselectorVersion" }
+camerax = { module = "io.github.lucksiege:camerax", version.ref = "pictureselectorVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+eventbus = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
+floatingx = { module = "io.github.petterpx:floatingx", version.ref = "floatingx" }
+flowlayout-lib = { module = "com.hyman:flowlayout-lib", version.ref = "flowlayoutLib" }
+foundation = { module = "com.tencent.openmap:foundation", version.ref = "foundation" }
+github-wheelview = { module = "com.github.gzu-liyujiang.AndroidPicker:WheelView", version.ref = "githubWheelview" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+hms-push = { module = "com.huawei.hms:push", version.ref = "pushVersion" }
+honor-push = { module = "com.umeng.umsdk:honor-push", version.ref = "honorPush" }
+honor-umengaccs = { module = "com.umeng.umsdk:honor-umengaccs", version.ref = "xiaomiUmengaccs" }
+huawei-umengaccs = { module = "com.umeng.umsdk:huawei-umengaccs", version.ref = "xiaomiUmengaccs" }
+immersionbar = { module = "com.gyf.immersionbar:immersionbar", version.ref = "immersionbar" }
+imsdk-plus = { module = "com.tencent.imsdk:imsdk-plus", version.ref = "imsdkPlus" }
+jp-glide-transformations = { module = "jp.wasabeef:glide-transformations", version.ref = "jpGlideTransformations" }
+leolin-shortcutbadger = { module = "me.leolin:ShortcutBadger", version.ref = "shortcutbadgerVersion" }
+library = { module = "com.liulishuo.filedownloader:library", version.ref = "library" }
+libraryx = { module = "com.github.JavaNoober.BackgroundLibrary:libraryx", version.ref = "libraryx" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+lucksiege-ucrop = { module = "io.github.lucksiege:ucrop", version.ref = "ucropVersion" }
+lucksiege-pictureselector = { module = "io.github.lucksiege:pictureselector", version.ref = "pictureselectorVersion" }
+#noinspection SimilarGradleDependency
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+#noinspection SimilarGradleDependency
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+mcs-ads-identifier = { module = "com.hihonor.mcs:ads-identifier", version.ref = "adsIdentifierVersion" }
+me-library = { module = "me.zhanghai.android.materialprogressbar:library", version.ref = "meLibraryVersion" }
+mediation-auto-adapter = { module = "com.pangle.cn:mediation-auto-adapter", version.ref = "mediationAutoAdapter" }
+mpandroidchart = { module = "com.github.PhilJay:MPAndroidChart", version.ref = "mpandroidchart" }
+okhttp-sse = { module = "com.squareup.okhttp3:okhttp-sse", version.ref = "okhttpSse" }
+oppo-push = { module = "com.umeng.umsdk:oppo-push", version.ref = "oppoPush" }
+oppo-umengaccs = { module = "com.umeng.umsdk:oppo-umengaccs", version.ref = "xiaomiUmengaccs" }
+persistentcookiejar = { module = "com.github.franmontiel:PersistentCookieJar", version.ref = "persistentcookiejar" }
+push = { module = "com.umeng.umsdk:push", version.ref = "push" }
+qqopensdk = { module = "com.tencent.tauth:qqopensdk", version.ref = "qqopensdk" }
+randomtextview = { module = "com.github.AndroidMsky:RandomTextView", version.ref = "randomtextview" }
+rangersapplog-all-plugin = { module = "com.bytedance.applog:RangersAppLog-All-plugin-agp8", version.ref = "rangersapplogAllPlugin" }
+rangersapplog-devtools = { module = "com.bytedance.applog:RangersAppLog-DevTools", version.ref = "rangersapplogDevtools" }
+rangersapplog-lite-cn = { module = "com.bytedance.applog:RangersAppLog-All-cn", version.ref = "rangersapplogAllPlugin" }
+rangeseekbar = { module = "com.github.Jay-Goo:RangeSeekBar", version.ref = "rangeseekbar" }
+realm-gradle-plugin = { module = "io.realm:realm-gradle-plugin", version.ref = "realmGradlePlugin" }
+refresh-header-classics = { module = "io.github.scwang90:refresh-header-classics", version.ref = "refreshFooterClassicsVersion" }
+refresh-layout-kernel = { module = "io.github.scwang90:refresh-layout-kernel", version.ref = "refreshFooterClassicsVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-url-manager = { module = "me.jessyan:retrofit-url-manager", version.ref = "retrofitUrlManager" }
+rxffmpeg = { module = "com.github.microshow:RxFFmpeg", version.ref = "rxffmpeg" }
+scannerzbarlib = { module = "com.shouzhong:ScannerZBarLib", version.ref = "scannerzbarlib" }
+scwang90-refresh-footer-classics = { module = "io.github.scwang90:refresh-footer-classics", version.ref = "refreshFooterClassicsVersion" }
+shadowlayout = { module = "com.github.lihangleo2:ShadowLayout", version.ref = "shadowlayout" }
+sdk-utilities = { module = "com.tencent.map:sdk-utilities", version.ref = "sdkUtilities" }
+tencent-libpag = { module = "com.tencent.tav:libpag", version.ref = "tencentLibpag" }
+tencent-map-vector-sdk = { module = "com.tencent.map:tencent-map-vector-sdk", version.ref = "tencentMapVectorSdk" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+wechat-sdk-android-without-mta = { module = "com.tencent.mm.opensdk:wechat-sdk-android-without-mta", version.ref = "wechatSdkAndroidWithoutMta" }
+wheelpicker = { module = "com.github.gzu-liyujiang.AndroidPicker:WheelPicker", version.ref = "githubWheelview" }
+vivo-push = { module = "com.umeng.umsdk:vivo-push", version.ref = "vivoPush" }
+vivo-umengaccs = { module = "com.umeng.umsdk:vivo-umengaccs", version.ref = "xiaomiUmengaccs" }
+xiaomi-push = { module = "com.umeng.umsdk:xiaomi-push", version.ref = "xiaomiPush" }
+xiaomi-umengaccs = { module = "com.umeng.umsdk:xiaomi-umengaccs", version.ref = "xiaomiUmengaccs" }
+xx = { module = "com.yanzhenjie.recyclerview:x", version.ref = "xx" }
+yicjetpackmvvm = { module = "com.github.9694101:YicJetpackMvvm", version.ref = "yicjetpackmvvm" }
+tencentVasdolly = { module = "com.tencent.vasdolly:helper", version.ref = "tencentVasdolly" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
